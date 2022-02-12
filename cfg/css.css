@@ -1,0 +1,22 @@
+.carousel-item img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+#form1{
+    background:
+    url(../img/bagrL.png) 10% 60% no-repeat, 
+    url(../img/bagrR.png) 88% 33% no-repeat;
+    background-size: 40%;
+}
+#form2{
+    background:
+    url(../img/bagr.png) 80% 0% no-repeat; 
+    background-size: cover;
+}
+.img-fluid {
+    pointer-events:auto;
+
+}
+
