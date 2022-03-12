@@ -1,0 +1,111 @@
+<!--
+  GROWTASK
+  Автор – GSergeyP
+  Версия 1.0.0  
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleBasic.css" />
+    <title>GROWTASK</title>
+</head>
+<body>
+<a name="header"></a>
+<header>
+    <nav id="bgChange">
+        <img id="hamburger" src="./img/hamburger.png" />    
+        <ul id="navChange">
+            <li><a href="#header">Главная</a></li>
+            <li><a href="#carousel">Слайдер</a></li>
+            <li><a href="#card">Карточки</a></li>
+            <li><a href="#form">Форма</a></li>
+            <li><a href="#accordion">Список</a></li>
+            <li><a href="javascript:void(0)" onClick="modalOpen(); return false;">Модалка</a></li>
+        </ul>
+    </nav>
+    <script type="text/javascript" src="./js/bgChange.js"></script><!--Изменение фона Навигации-->
+    <script type="text/javascript" src="./js/navChange.js"></script><!--Для мобильной версии. Изменение внешнего вида кнопки hamburger при касании/и после прекращения касания; Скрыть/Отобразить содержимое Навигации-->
+    <h1>GROWTASK</h1>
+    <button type="button" class="modalOpen" onClick="modalOpen(); return false;">Модальное окно</button>
+</header>
+<main>
+    <!--Модальное окно-->
+    <section class="modal">
+        <div class="modalBlock">
+            <div class="modalHeader">
+                <img src="./img/cross.png" onClick="modalClose(); return false;" />  
+            </div>
+            <div class="modalBody">
+                <h1>Модалка</h1>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./js/modal.js"></script><!--Отображение/Закрытие Модального окна-->  
+    <!--Карусель-->
+    <a name="carousel"></a>
+    <section class="carousel">
+        <h2>Слайдер</h2>
+        <div id="carouselBlock">
+            <div id="carouselItem1"></div>
+            <div id="carouselItem2"></div>
+            <div id="carouselItem3"></div>
+        </div>
+        <button id="carouselPrev"></button>   
+        <button id="carouselNext"></button>    
+    </section>
+    <script type="text/javascript" src="./js/carousel.js"></script><!--Создание Карусели. Элементы управления карусели-->  
+    <!--Карточки-->
+    <a name="card"></a>
+    <section class="card">
+        <h2>Карточки</h2>
+        <button id="cardPrev"></button>   
+        <button id="cardNext"></button>   
+        <div id="cardBlock"></div> 
+    </section>
+    <script type="text/javascript" src="./js/card.js"></script><!--Создание Карточек. Элементы управления карточек-->  
+    <!--Форма-->
+    <a name="form"></a>
+    <section class="form">
+        <div class="formBlock">
+            <form name="form" id="form" onsubmit="formValidation(); return false;" method="post">
+                <h2>Форма</h2>
+                <p>Стандартная форма обратной связи</p>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="&nbsp;Имя*" />
+                <h4 id="nameErr"></h4>
+                <input type="text" name="phone" id="phone" autocomplete="off" placeholder="&nbsp;Телефон*" />
+                <h4 id="phoneErr"></h4>
+                <textarea name="msg" id="msg" rows="6" placeholder="&nbsp;Напиши чего хочешь"></textarea>
+                <h4 id="msgErr"></h4>
+                <input type="reset" id="reset" value="Не отправлять" />
+                <input type="submit" value="Оправить" />
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="./js/formValidation.js"></script><!--Валидация введенных данных в форму--> 
+    <!--Аккордеон-->
+    <a name="accordion"></a>
+    <section id="accordion">
+        <h2 >Список</h2>
+    </section>
+    <script type="text/javascript" src="./js/accordion.js"></script><!--Создание Аккордеона, элементы управления--> 
+    <section style="height: 50px;">
+    </section>
+</main>
+<footer>
+    <ul>
+        <li><a href="#header">Главная</a></li>
+        <li><a href="#carousel">Слайдер</a></li>
+        <li><a href="#card">Карточки</a></li>
+        <li><a href="#form">Форма</a></li>
+        <li><a href="#accordion">Список</a></li>
+        <li><a href="javascript:void(0)" onClick="modalOpen(); return false;">Модалка</a></li>
+    </ul>
+</footer>
+<style>
+    @import url('./css/styleAdditional.css');
+</style>
+</body>
+</html>
