@@ -1,0 +1,96 @@
+// Карусель
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    #carouselPrev {
+        z-index: 1;
+        position: absolute;
+        height: 3.5vw;
+        top: 33vw;
+        left: 5vw;
+        border: none;
+        cursor: pointer;
+    }
+    #carouselNext {
+        z-index: 1;
+        position: absolute;
+        height: 3.5vw;
+        top: 33vw;
+        right: 12vw;
+        border: none;
+        cursor: pointer;
+    }
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        h2 {
+            margin-left: 20%;
+        }
+    }
+    #carouselBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #carouselItem1 {
+        width: 11vw;
+        background-repeat: no-repeat;
+        background-position: 80% -2vw;
+        background-size: cover;
+        overflow: hidden;
+        filter:  opacity(25%);
+    }
+    #carouselItem2 {
+        width: 75vw;
+        padding-top: 43vw;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    #carouselItem3 {
+        width: 11vw;
+        background-repeat: no-repeat;
+        background-position: -13.2vw -2vw;
+        background-size: cover;
+        overflow: hidden;
+        filter:  opacity(25%);
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    #carouselPrev {
+        display: none;
+    }
+    #carouselNext {
+        display: none;
+    }
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        h2 {
+            margin-left: 7%;
+        }
+    }
+    #carouselBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #carouselItem1 {
+        display: none;
+    }
+    #carouselItem2 {
+        width: 90%;
+        padding-top: 55vw;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    #carouselItem3 {
+        display: none;
+    }
+}

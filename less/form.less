@@ -1,0 +1,147 @@
+// Форма
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    .form {
+        position: relative;
+        background: url('../img/bgL.png');
+        background-repeat: no-repeat;
+        background-position: 2% 0;
+        background-size: contain;
+        height: 50vw;
+        width: 100%;
+        top: -5vw;
+    }
+    .formBlock {
+        position: relative;
+        background: url('../img/bgR.png');
+        background-repeat: no-repeat;
+        background-position: 96% 20%;
+        background-size: contain;
+        height: 50vw;
+        width: 100%;
+    }
+    form {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: @quaternary;
+        top: 9vw;
+        width: 36%;
+        input[type=text] {
+            position: relative;
+            width: 60%;
+            height: 3vw;
+            margin: 0 20%;
+        }
+        input[type=reset]{
+            position: relative;
+            width: 25%;
+            height: 2vw;
+            margin: 3% 0 10% 20%;
+            top: -1vw;
+        }   
+        input[type=submit] {
+            position: relative;
+            width: 25%;
+            height: 2vw;
+            left: 3.8vw;
+            margin: 3% 0;
+            top: -1vw;
+        }     
+        textarea {
+            position: relative;
+            width: 60%;
+            margin: 0 20%;
+            resize: none;
+        }
+        h2 {
+            position: relative;
+            margin-left: 20%;
+            top: 2vw;
+        }
+        p {
+            position: relative;
+            margin-left: 20%;
+            top: 0;
+            font-size: 1.22vw;
+        }
+        h4 {
+            position: relative;
+            margin-left: 20%;
+            line-height: 0;
+            height: 0.01vw;
+            color: @secondary;
+        }
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    .form {
+        position: relative;
+        background: url('../img/bgM.png');
+        background-repeat: no-repeat;
+        background-position: -33vw 52vw;
+        background-size: contain;
+        height: 160vw;
+        width: 100%;
+    }
+    .formBlock {
+        position: relative;
+    }
+    form {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: @quaternary;
+        top: 10vw;
+        width: 90%;
+        height: 115vw;
+        input[type=text] {
+            position: relative;
+            width: 80%;
+            height: 7vw;
+            margin: 0 10%;
+        }
+        input[type=reset]{
+            position: absolute;
+            width: 80%;
+            height: 7vw;
+            left: 10vw;
+            top: 102vw;
+        }   
+        input[type=submit] {
+            position: absolute;
+            width: 80%;
+            height: 7vw;
+            left: 10vw;
+            top: 92vw;
+        }     
+        textarea {
+            position: relative;
+            width: 80%;
+            margin: 0 10%;
+            resize: none;
+        }
+        h2 {
+            position: relative;
+            margin-left: 10%;
+            padding-bottom: 8vw;
+            top: 10vw;
+        }
+        p {
+            position: relative;
+            margin-left: 10%;
+            padding-bottom: 2vw;
+            font-size: 3.72vw;
+        }
+        h4 {
+            position: relative;
+            margin-left: 10%;    
+            line-height: 0;
+            height: 0.01vw;
+            padding-bottom: 0;
+            color: @secondary;
+        }
+    }
+}

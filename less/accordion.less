@@ -1,0 +1,66 @@
+// Аккордеон
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    #accordion {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+    .accordionBlock {
+        position: relative;
+        margin-bottom: 1vw;
+        width: 100%;
+
+    }
+    .accordionHeader {
+        position: relative;
+        background: @twelvefold;
+        width: 100%;
+        height: 4vw;
+        h3 {
+            position: absolute;
+            margin-left: 5%;
+            top: -2.2vw;
+        }
+    }
+    .accordionBody {
+        display: none;
+        position: relative;
+        background: @eleventimes;
+        padding: 1.5vw 2vw;
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    #accordion {
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    .accordionBlock {
+        position: relative;
+        margin-bottom: 1vw;
+        width: 100%;
+
+    }
+    .accordionHeader {
+        position: relative;
+        background: @twelvefold;
+        width: 100%;
+        height: 10vw;
+        h3 {
+            position: absolute;
+            margin-left: 5%;
+            top: -2.2vw;
+        }
+    }
+    .accordionBody {
+        display: none;
+        position: relative;
+        background: @eleventimes;
+        padding: 1.5vw 2vw;
+    }
+}

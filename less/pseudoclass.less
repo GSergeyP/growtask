@@ -1,0 +1,205 @@
+// Псевдоклассы
+a {
+    color: @primary;
+    text-decoration: none;   
+}
+a:link {
+    color: @primary;
+}
+@media (hover) {
+    a:hover {
+        color: @secondary;
+    }
+}
+a:active {
+    color: @secondary;
+}
+a:focus {
+    color: @tertiary;
+}
+.modalOpen {
+    background-color: none;
+    border-color: @seventh;
+    color: @seventh;
+}
+.modalOpen:link {
+    background-color: none;
+    border-color: @seventh;
+    color: @seventh;
+}
+@media (hover) {
+    .modalOpen:hover {
+        background-color: @secondary;
+        border-color: @secondary;
+        color: @fivefold;
+    }
+}
+.modalOpen:active {
+    background-color: @tertiary;
+    border-color: @tertiary;
+    color: @fivefold;
+}
+#carouselPrev {
+    background: url('../img/buttonPrev.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#carouselPrev:link {
+    background: url('../img/buttonPrev.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+@media (hover) {
+    #carouselPrev:hover {
+        background: url('../img/buttonPrevTouch.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}
+#carouselPrev:active {
+    background: url('../img/buttonPrevPush.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#carouselNext {
+    background: url('../img/buttonNext.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#carouselNext:link {
+    background: url('../img/buttonNext.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+@media (hover) {
+    #carouselNext:hover {
+        background: url('../img/buttonNextTouch.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}
+#carouselNext:active {
+    background: url('../img/buttonNextPush.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#cardPrev {
+    background: url('../img/buttonPrev.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#cardPrev:link {
+    background: url('../img/buttonPrev.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+@media (hover) {
+    #cardPrev:hover {
+        background: url('../img/buttonPrevTouch.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}
+#cardPrev:active {
+    background: url('../img/buttonPrevPush.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#cardNext {
+    background: url('../img/buttonNext.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+#cardNext:link {
+    background: url('../img/buttonNext.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+@media (hover) {
+    #cardNext:hover {
+        background: url('../img/buttonNextTouch.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}
+#cardNext:active {
+    background: url('../img/buttonNextPush.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+input[type=reset] {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: @primary;
+}
+input[type=reset]:link {
+    color: @primary;
+}
+@media (hover) {
+    input[type=reset]:hover {
+        color: @secondary;
+    }
+}
+input[type=reset]:active {
+    color: @tertiary;
+}
+input[type=submit] {
+    cursor: pointer;
+    border: solid @primary 1px;
+    background: @quaternary;
+    color: @primary;
+}
+input[type=submit]:link {
+    color: @primary;
+}
+@media (hover) {
+    input[type=submit]:hover {
+        border: solid @secondary 1px;
+        background: @secondary;
+        color: @fivefold;
+    }
+}
+input[type=submit]:active {
+    border: solid @tertiary 1px;
+    background: @tertiary;
+    color: @fivefold;
+}
+input[type=text], 
+textarea {
+    cursor: pointer;
+    border: solid @seventh 1px;
+    background: @quaternary;
+}
+@media (hover) {
+    input[type=text]:hover,
+    textarea:hover {
+        border: solid @secondary 1px;
+    }
+}
+input[type=text]:active,
+textarea:active {
+    border: solid @secondary 1px;
+}
+input[type=text]:focus,
+textarea:focus {
+    border: solid @secondary 1px;
+    outline: none;
+}

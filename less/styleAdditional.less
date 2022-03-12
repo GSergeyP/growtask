@@ -1,0 +1,170 @@
+// styleAdditional.css - дополнительные стили
+/* GROWTASK
+   Автор – GSergeyP
+   Версия 1.0.0  */
+
+// Импорт Переменные
+@import "variables.less";
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    .accordionHeaderNew {
+        background: @eleventimes;
+    }
+    .accordionBodyNew {
+        position: relative;
+        display: block;
+        width: 93.2%;
+        text-align: justify;
+        p {
+            position: relative;
+            font-size: 1.34vw;
+        }
+   }
+   .accordionOpen {
+        position: relative;
+        left: 50vw;
+        top: 0.5vw;
+        background: url(../img/buttonBottom.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        height: 3vw !important;
+        cursor: pointer;
+        border: none;
+    }
+    .accordionOpen:link {
+        background: url(../img/buttonBottom.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    .accordionOpen:hover {
+        background: url(../img/buttonBottomTouch.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+
+    }
+    .accordionOpen:active {
+        background: url(../img/buttonBottomPush.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    .accordionOpenNew {
+        position: relative;
+        left: 50vw;
+        top: 0.5vw;
+        background: url(../img/buttonTop.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        height: 3vw !important;
+        cursor: pointer;
+        border: none;
+    }
+    .accordionOpenNew:link {
+        background: url(../img/buttonTop.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+
+        .accordionOpenNew:hover {
+            background: url(../img/buttonTopTouch.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+
+    .accordionOpenNew:active {
+        background: url(../img/buttonTopPush.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    .accordionHeaderNew {
+        background: @eleventimes;
+    }
+    .accordionBodyNew {
+        position: relative;
+        display: block;
+        width: 95.2%;
+        text-align: justify;
+        p {
+            position: relative;
+            font-size: 1.34vw;
+        }
+   }
+   .accordionOpen {
+        position: relative;
+        left: 84vw;
+        top: 9vw;
+        background: url(../img/buttonBottom.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        width: 8vw;
+        height: 8vw !important;
+        cursor: pointer;
+        border: none;
+    }
+    .accordionOpen:link {
+        background: url(../img/buttonBottom.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    @media (hover) {
+        .accordionOpen:hover {
+            background: url(../img/buttonBottomTouch.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+
+        }
+    }
+    .accordionOpen:active {
+        background: url(../img/buttonBottomPush.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    .accordionOpenNew {
+        position: relative;
+        left: 84vw;
+        top: 9vw;
+        background: url(../img/buttonTop.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        width: 8vw;
+        height: 8vw !important;
+        cursor: pointer;
+        border: none;
+    }
+    .accordionOpenNew:link {
+        background: url(../img/buttonTop.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    @media (hover) {
+        .accordionOpenNew:hover {
+            background: url(../img/buttonTopTouch.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+        }
+    }
+    .accordionOpenNew:active {
+        background: url(../img/buttonTopPush.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+}

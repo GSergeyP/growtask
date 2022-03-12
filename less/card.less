@@ -1,0 +1,154 @@
+// Карточки
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    #cardPrev {
+        z-index: 1;
+        position: absolute;
+        height: 3.5vw;
+        top: 6vw;
+        right: 9vw;
+        border: none;
+        cursor: pointer;
+    }
+    #cardNext {
+        z-index: 1;
+        position: absolute;
+        height: 3.5vw;
+        top: 6vw;
+        right: 4vw;
+        border: none;
+        cursor: pointer;
+    }
+    .card {
+        position: relative;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        overflow: hidden;
+        h2 {
+            margin-left: 12%;
+        }
+    }
+    #cardBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        button{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .cardItem {
+        background: @ninefold;
+        width: 20vw;
+    }
+    .cardHeader {
+        text-align: center;
+        img {
+            width: 20vw;
+            height: auto;
+        }
+    }
+    .cardBody {
+        position: relative;
+        text-align: left;
+        margin: 2vw 2vw;
+        height: 15vw;
+        button {
+            position: absolute;
+            top: 12vw;
+            left: -0.5vw;
+            width: 15vw !important;
+            height: 3vw !important;
+            border: solid 1px @seventh;
+            background: none;
+            cursor: pointer;
+            font-size: 1.3vw ;
+        }
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    #cardPrev {
+        z-index: 1;
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        top: 17vw;
+        left: 77vw;
+        border: none;
+        cursor: pointer;
+    }
+    #cardNext {
+        z-index: 1;
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        top: 17vw;
+        left: 90vw;
+        border: none;
+        cursor: pointer;
+    }
+    .card {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        h2 {
+            margin-left: 7%;
+        }
+    }
+    #cardBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        button{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .cardItem {
+        background: @ninefold;
+        width: 70vw;
+    }
+    .cardItemSlim {
+        width: 5vw !important;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        button {
+            display: none;
+        }
+        p {
+            display: none;
+        }
+        h3 {
+            display: none;
+        }
+    }
+    .cardHeader {
+        text-align: center;
+        img {
+            width: 70vw;
+            height: auto;
+        }
+    }
+    .cardBody {
+        position: relative;
+        text-align: left;
+        margin: 2vw 2vw;
+        height: 55vw;
+        button {
+            position: absolute;
+            top: 50vw;
+            left: 33vw;
+            width: 50vw !important;
+            height: 10vw !important;
+            border: solid 1px @seventh;
+            background: none;
+            cursor: pointer;
+        }
+    }
+}

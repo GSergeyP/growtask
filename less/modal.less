@@ -1,0 +1,90 @@
+// Модальное окно
+
+// Для экранов > 577px
+@media (min-width: 577px) {
+    .modal {
+        z-index: 10;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: @vosmirichny;  
+        ///////////////////////
+        animation-name: animate;
+        animation-duration: 1s;
+        .modalBlock {
+            flex-direction: column;
+            width: 30vw;
+            background: @fivefold;
+            .modalHeader {
+                height: 3vw;
+                text-align: right;
+                img{
+                    width: 3vw;
+                    height: auto;
+                    cursor: pointer;
+                }
+            }
+            .modalBody {
+                height: 30vh;
+                box-sizing: border-box;
+                h1 {
+                    position: relative;
+                    margin: 0;
+                    top: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// Для экранов < 576px
+@media (max-width: 576px) {
+    .modal {
+        z-index: 10;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: @vosmirichny;  
+        ///////////////////////
+        animation-name: animate;
+        animation-duration: 1s;
+        .modalBlock {
+            flex-direction: column;
+            width: 80vw;
+            background: @fivefold; 
+            .modalHeader {
+                height: 10vw;
+                text-align: right;
+                img{
+                    width: 10vw;
+                    height: auto;
+                    cursor: pointer;
+                }
+            }
+            .modalBody {
+                height: 30vh;
+                box-sizing: border-box;
+                h1 {
+                    position: relative;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }               
+}
+////////////////////
+@keyframes animate {
+    from {top: -1000px; opacity:0}
+    to {top:0; opacity:1}
+}
